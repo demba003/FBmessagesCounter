@@ -25,7 +25,7 @@ public class App {
     public static void main(String[] args) {
 
         try {
-           token = Files.readAllLines(Paths.get("tokenfile")).get(0);
+            token = Files.readAllLines(Paths.get("tokenfile")).get(0);
         } catch (NoSuchFileException e) {
             System.out.println("Get your Facebook Graph API token: https://developers.facebook.com/tools/explorer/");
             System.out.println("And paste it here:");
@@ -44,6 +44,8 @@ public class App {
         }
 
         try {
+            File friendsFile = new File("friends");
+            friendsFile.createNewFile();
             PropertiesConfiguration friends = new PropertiesConfiguration("friends");
             Document doc;
 
