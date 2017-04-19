@@ -9,3 +9,5 @@ dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 messages.htm
+tokenfile
+friends
